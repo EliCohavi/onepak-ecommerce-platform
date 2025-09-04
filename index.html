@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ReCollect | Hassle-Free Old Tech Returns</title>
+    <meta name="description"
+        content="Order a prepaid kit to send in old phones and devices. Secure, sustainable, trackable.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <!-- Skip link for a11y -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container nav">
+            <a href="#" class="brand" aria-label="ReCollect Home">
+                <img src="./assets/logo.svg" alt="" class="logo" />
+                <span class="brand-text">ReCollect</span>
+            </a>
+
+            <nav class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#how">How it works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#account" class="link-muted">Login</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn btn-primary" data-open-order>Order Kit</button>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Toggle navigation</span>
+                ☰
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu" hidden>
+            <ul>
+                <li><a href="#how">How it works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#account">Login</a></li>
+                <li><button class="btn btn-primary btn-block" data-open-order>Order Kit</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>Clear the drawer. Do good. <span class="accent">We handle the rest.</span></h1>
+                    <p class="lead">
+                        Order a prepaid, padded kit in minutes. Track it end-to-end. We resell or responsibly recycle
+                        your old tech through certified partners.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" data-open-order>Order your kit</button>
+                        <a class="btn btn-ghost" href="#how">See how it works</a>
+                    </div>
+                    <ul class="trust-points">
+                        <li>Secure data handling</li>
+                        <li>Carbon-neutral shipping</li>
+                        <li>Certified downstream partners</li>
+                    </ul>
+                </div>
+                <div class="hero-card" aria-hidden="true">
+                    <div class="card">
+                        <div class="card-head">
+                            <strong>Kit preview</strong>
+                            <small>Padded mailer • Return label • Simple steps</small>
+                        </div>
+                        <div class="card-body">
+                            <ul class="checklist">
+                                <li>Fits phones & small devices</li>
+                                <li>Battery-safe packaging</li>
+                                <li>QR tracking</li>
+                            </ul>
+                        </div>
+                        <div class="card-foot">
+                            <span class="price">$15</span> per kit
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social proof / counters -->
+        <section class="metrics">
+            <div class="container metrics-grid">
+                <div><strong class="kpi" data-kpi="devices">0</strong><span>Devices processed</span></div>
+                <div><strong class="kpi" data-kpi="co2">0</strong><span>kg CO₂e avoided</span></div>
+                <div><strong class="kpi" data-kpi="landfill">0</strong><span>lb diverted from landfill</span></div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section id="how" class="section">
+            <div class="container">
+                <h2>How it works</h2>
+                <ol class="steps">
+                    <li>
+                        <h3>Order your kit</h3>
+                        <p>Pick quantity and checkout. We ship your padded, prepaid mailer to your door.</p>
+                    </li>
+                    <li>
+                        <h3>Pack & send</h3>
+                        <p>Drop your devices in the mailer, seal, and hand to any carrier location. Tracking included.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>We triage responsibly</h3>
+                        <p>Refurbishable items go to vetted partners. Others are harvested for parts or recycled.</p>
+                    </li>
+                    <li>
+                        <h3>See your impact</h3>
+                        <p>We show verified CO₂e savings and diversion metrics in your dashboard and email receipt.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="section alt">
+            <div class="container">
+                <h2>Simple pricing</h2>
+                <div class="pricing-cards">
+                    <article class="price-card">
+                        <header>
+                            <h3>Standard Kit</h3>
+                            <p>Phones & small devices</p>
+                        </header>
+                        <div class="price-row"><span class="price">$15</span> / kit</div>
+                        <ul class="features">
+                            <li>Prepaid label</li>
+                            <li>Padded mailer</li>
+                            <li>Tracking + email updates</li>
+                        </ul>
+                        <button class="btn btn-primary" data-open-order data-sku="standard">Order</button>
+                    </article>
+
+                    <article class="price-card">
+                        <header>
+                            <h3>Plus Kit</h3>
+                            <p>Multiple phones or small tablets</p>
+                        </header>
+                        <div class="price-row"><span class="price">$19</span> / kit</div>
+                        <ul class="features">
+                            <li>Larger mailer</li>
+                            <li>Battery-safe insert</li>
+                            <li>Priority processing</li>
+                        </ul>
+                        <button class="btn btn-primary" data-open-order data-sku="plus">Order</button>
+                    </article>
+
+                    <article class="price-card">
+                        <header>
+                            <h3>Box Kit</h3>
+                            <p>Tablets & mixed small electronics</p>
+                        </header>
+                        <div class="price-row"><span class="price">$25</span> / kit</div>
+                        <ul class="features">
+                            <li>Prepaid box label</li>
+                            <li>Cushioning materials</li>
+                            <li>Insurance included</li>
+                        </ul>
+                        <button class="btn btn-primary" data-open-order data-sku="box">Order</button>
+                    </article>
+                </div>
+
+                <p class="fineprint">
+                    Need enterprise or school drives? <a href="#contact">Contact us</a> for bulk pricing.
+                </p>
+            </div>
+        </section>
+
+        <!-- Impact -->
+        <section id="impact" class="section">
+            <div class="container impact-grid">
+                <div>
+                    <h2>Sustainability you can see</h2>
+                    <p>
+                        Your kit enables a circular pathway: refurbish where possible, harvest parts when practical,
+                        and recycle materials with certified partners when devices are beyond repair.
+                    </p>
+                    <ul class="bullets">
+                        <li>R2 / e-Stewards downstream network</li>
+                        <li>Verified data sanitation workflows</li>
+                        <li>Carbon-neutral logistics</li>
+                    </ul>
+                </div>
+                <div class="impact-card" aria-hidden="true">
+                    <div class="card">
+                        <div class="card-head"><strong>Example impact receipt</strong></div>
+                        <div class="card-body">
+                            <ul class="impact-list">
+                                <li><span>Devices resold</span><strong>2</strong></li>
+                                <li><span>Parts harvested</span><strong>1</strong></li>
+                                <li><span>Recycled responsibly</span><strong>3</strong></li>
+                                <li><span>CO₂e avoided</span><strong>4.8 kg</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust badges -->
+        <section class="trust">
+            <div class="container trust-grid">
+                <div class="badge">R2 Partner</div>
+                <div class="badge">e-Stewards</div>
+                <div class="badge">ISO 14001</div>
+                <div class="badge">GDPR-Aligned</div>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section id="faqs" class="section alt">
+            <div class="container">
+                <h2>FAQs</h2>
+                <div class="accordion" data-accordion>
+                    <details>
+                        <summary>What can I send?</summary>
+                        <div class="accordion-body">
+                            Phones, small tablets, wearables, chargers, and small accessories. Please remove SIM cards.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>How do you handle my data?</summary>
+                        <div class="accordion-body">
+                            We require factory resets and provide step-by-step guides. Downstream refurbishers perform
+                            certified wipes.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>What happens to non-resalable devices?</summary>
+                        <div class="accordion-body">
+                            Usable parts are harvested; the rest is recycled with certified partners. You’ll see this on
+                            your impact receipt.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>When will my kit arrive?</summary>
+                        <div class="accordion-body">
+                            Typically 3–5 business days. You’ll get a tracking link once it ships.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Do I get paid for my device?</summary>
+                        <div class="accordion-body">
+                            Our D2C program focuses on convenience and sustainability. You pay for the kit; we handle
+                            responsible processing.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="brand footer-brand">
+                    <img src="./assets/logo.svg" alt="" class="logo" />
+                    <span class="brand-text">ReCollect</span>
+                </div>
+                <p class="muted">Hassle-free returns for old tech. Built for circularity.</p>
+            </div>
+            <nav aria-label="Footer">
+                <ul>
+                    <li><a href="#how">How it works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul class="legal">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#" id="contact">Contact</a></li>
+                </ul>
+                <small class="muted">© <span id="year"></span> ReCollect</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <dialog id="order-modal" aria-label="Order Kit">
+        <form method="dialog" class="modal">
+            <header class="modal-head">
+                <h3>Order your kit</h3>
+                <button class="icon-btn" value="close" aria-label="Close">✕</button>
+            </header>
+
+            <div class="modal-body">
+                <div class="field">
+                    <label for="sku">Kit type</label>
+                    <select id="sku" required>
+                        <option value="standard" selected>Standard — $15</option>
+                        <option value="plus">Plus — $19</option>
+                        <option value="box">Box — $25</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="qty">Quantity</label>
+                    <input id="qty" type="number" min="1" max="10" value="1" required />
+                </div>
+
+                <div class="field">
+                    <label for="email">Email (for updates)</label>
+                    <input id="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+                </div>
+
+                <fieldset class="grid-2">
+                    <div class="field">
+                        <label for="name">Full name</label>
+                        <input id="name" type="text" autocomplete="name" required />
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="tel" autocomplete="tel" />
+                    </div>
+                </fieldset>
+
+                <fieldset class="grid-2">
+                    <div class="field">
+                        <label for="address">Address</label>
+                        <input id="address" type="text" autocomplete="address-line1" required />
+                    </div>
+                    <div class="field">
+                        <label for="address2">Apt, suite, etc.</label>
+                        <input id="address2" type="text" autocomplete="address-line2" />
+                    </div>
+                </fieldset>
+
+                <fieldset class="grid-3">
+                    <div class="field">
+                        <label for="city">City</label>
+                        <input id="city" type="text" autocomplete="address-level2" required />
+                    </div>
+                    <div class="field">
+                        <label for="state">State</label>
+                        <input id="state" type="text" maxlength="2" placeholder="CA" required />
+                    </div>
+                    <div class="field">
+                        <label for="zip">ZIP</label>
+                        <input id="zip" type="text" inputmode="numeric" maxlength="10" required />
+                    </div>
+                </fieldset>
+
+                <div class="order-summary">
+                    <div><span>Subtotal</span><strong id="subtotal">$15.00</strong></div>
+                    <div><span>Shipping</span><strong>Included</strong></div>
+                    <div><span>Estimated tax</span><strong id="tax">$0.00</strong></div>
+                    <div class="total"><span>Total</span><strong id="total">$15.00</strong></div>
+                    <small class="muted">No payment captured here. Hook this up to Stripe (Buy Button / Payment Element)
+                        or your processor.</small>
+                </div>
+            </div>
+
+            <footer class="modal-foot">
+                <button class="btn btn-ghost" value="close">Cancel</button>
+                <button class="btn btn-primary" value="submit" id="fake-checkout">Place order</button>
+            </footer>
+        </form>
+    </dialog>
+
+    <script src="./app.js" defer></script>
+</body>
+
+</html>
