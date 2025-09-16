@@ -1,12 +1,7 @@
-// Scroll to Contact Form on Hero Button Click
-document.getElementById('getStartedBtn').addEventListener('click', () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-});
-
-// Simple form submission handler (demo)
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Thank you! Your message has been received.');
-    contactForm.reset();
+// FAQ Accordion
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+    });
 });

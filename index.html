@@ -4,129 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnePak D2C</title>
+    <title>EcoReturn – Recycle Your Tech</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
-        <h1>OnePak D2C</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="#devices">Devices</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar">
+            <div class="logo">🌱 EcoReturn</div>
+            <ul class="nav-links">
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#why">Why Recycle</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#cta" class="btn">Start Now</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <h1>Recycle Your Devices, Save the Planet</h1>
-        <p>OnePak makes it easy to responsibly recycle your old electronics while making a positive impact.</p>
-        <button id="getStartedBtn">Get Started</button>
+        <h1>Clear Your Drawer. 🌍 Save the Planet.</h1>
+        <p>Send us your old phones, tablets, and cords. We’ll recycle or repurpose them responsibly.</p>
+        <a href="#cta" class="btn primary">Get Your Prepaid Kit</a>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About OnePak</h2>
-        <div class="about">
-            <div>
-                <p>We partner with consumers and businesses to reclaim and recycle old electronics responsibly, helping
-                    reduce e-waste and supporting a circular economy.</p>
-            </div>
-            <div>
-                <img src="https://source.unsplash.com/600x400/?recycling,technology" alt="Recycling">
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works">
+    <section id="how" class="info-section">
         <h2>How It Works</h2>
-        <div class="how-it-works">
-            <div>
-                <h3>1. Send Your Device</h3>
-                <p>Use our prepaid shipping kit to safely send in your electronics.</p>
+        <div class="cards">
+            <div class="card">📦<h3>Step 1</h3>
+                <p>Order a prepaid kit to ship your old tech.</p>
             </div>
-            <div>
-                <h3>2. Evaluation</h3>
-                <p>We assess the device’s condition and determine resale or recycling path.</p>
+            <div class="card">🚚<h3>Step 2</h3>
+                <p>Drop it off at any mailbox or pickup point.</p>
             </div>
-            <div>
-                <h3>3. Reuse or Recycle</h3>
-                <p>Devices are refurbished for resale, or responsibly recycled for parts and materials.</p>
-            </div>
-            <div>
-                <h3>4. Make an Impact</h3>
-                <p>Track how your device helps reduce e-waste and supports sustainability.</p>
+            <div class="card">♻️<h3>Step 3</h3>
+                <p>We recycle, refurbish, or repurpose responsibly.</p>
             </div>
         </div>
     </section>
 
-    <!-- Devices -->
-    <section id="devices">
-        <h2>Devices We Accept</h2>
-        <div class="devices">
-            <div class="device-card">
-                <img src="https://source.unsplash.com/400x300/?iphone" alt="iPhone">
-                <div>
-                    <h3>iPhone</h3>
-                </div>
-            </div>
-            <div class="device-card">
-                <img src="https://source.unsplash.com/400x300/?laptop" alt="Laptop">
-                <div>
-                    <h3>Laptop</h3>
-                </div>
-            </div>
-            <div class="device-card">
-                <img src="https://source.unsplash.com/400x300/?tablet" alt="Tablet">
-                <div>
-                    <h3>Tablet</h3>
-                </div>
-            </div>
-            <div class="device-card">
-                <img src="https://source.unsplash.com/400x300/?smartwatch" alt="Smartwatch">
-                <div>
-                    <h3>Smartwatch</h3>
-                </div>
-            </div>
+    <section id="why" class="alt-section">
+        <h2>Why Recycle?</h2>
+        <p>Every device contains precious metals and plastics that can be reused. Recycling reduces e-waste, saves
+            energy, and keeps harmful materials out of landfills.</p>
+        <div class="benefits">
+            <span>🌳 Eco-friendly</span>
+            <span>💰 Affordable</span>
+            <span>🔒 Secure Data Wipe</span>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials">
-        <h2>What Our Users Say</h2>
-        <div class="testimonials">
-            <div class="testimonial">
-                <p>"OnePak made it super easy to recycle my old devices. I love that they’re sustainable and secure!"
-                </p>
-                <p><strong>- Jamie R.</strong></p>
+    <section id="faq" class="info-section">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+            <button class="faq-question">What devices can I send? ➕</button>
+            <div class="faq-answer">We accept phones, tablets, laptops, and cables of any kind.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do I get paid for my device? ➕</button>
+            <div class="faq-answer">During the pilot, we focus on easy recycling. Later we may offer trade-in credits.
             </div>
-            <div class="testimonial">
-                <p>"I finally cleared out my device drawer and felt good about recycling responsibly."</p>
-                <p><strong>- Alex T.</strong></p>
-            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Is my data safe? ➕</button>
+            <div class="faq-answer">Yes — all devices are securely wiped before reuse or recycling.</div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="cta" class="cta-section">
+        <h2>Ready to Declutter?</h2>
+        <p>Join thousands already recycling their tech responsibly.</p>
+        <a href="#" class="btn primary">Order My Kit</a>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 OnePak D2C. <a href="#">Privacy Policy</a></p>
+        <p>© 2025 EcoReturn. Built with sustainability in mind. 🌱</p>
     </footer>
 
     <script src="script.js"></script>

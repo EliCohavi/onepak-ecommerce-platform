@@ -1,0 +1,161 @@
+:root {
+    --green: #4caf50;
+    --light-green: #e8f5e9;
+    --blue: #03a9f4;
+    --gray: #555;
+    --offwhite: #fafafa;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    color: var(--gray);
+    background: var(--offwhite);
+    line-height: 1.6;
+}
+
+header {
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: var(--light-green);
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--green), var(--blue));
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn.primary {
+    background: white;
+    color: var(--green);
+}
+
+.btn.primary:hover {
+    background: var(--light-green);
+    color: var(--gray);
+}
+
+.info-section,
+.alt-section,
+.cta-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.alt-section {
+    background: var(--light-green);
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.benefits {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.faq-item {
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+}
+
+.faq-answer {
+    display: none;
+    padding: 1rem;
+    background: var(--light-green);
+    border-radius: 12px;
+    margin-top: 0.5rem;
+}
+
+.cta-section {
+    background: var(--green);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white; }
